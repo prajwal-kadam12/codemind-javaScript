@@ -53,7 +53,7 @@ let student ={
         tal : "Indapur",
         dist : "pune",
         walk : function(){
-            console.log(`I can Walk.....`);
+            console.log(`I can Walk.....`)
             
         }
     }
@@ -62,11 +62,14 @@ console.log(student.fName);
 console.log(student.lName);
 console.log(student.age);
 console.log(student.collage);
-console.log(student.address);
-console.log(student.address.atPost);
+// console.log(student.address);
+// console.log(student.address.atPost);
 student.address.floorNumber= 10;
 console.log(student.address);
 student.address.walk();
+const value1 = JSON.parse(JSON.stringify(student));
+console.log(value1);
+
 
 let employee ={
     fName : "Pratik",
